@@ -23,6 +23,8 @@ export default function SignUp() {
             alert("Enter a valid email address!");
         }else if(password.length < 6){
             alert("Enter valid password with at least 6 characters!")
+        }else if(agency.length < 1){
+            alert("Please choose YES or NO in Agency Option!")
         }else{
             const newUser = {
                 fullName,
