@@ -1,13 +1,244 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #F7F8F9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.red{
+    color: red;
+    font-size: 18px;
 }
+
+h1{
+    width: 260px;
+}
+
+/* landing page */
+
+.landing{
+    position: relative;
+    margin:0 auto;
+    width: 320px;
+    min-width: 200px;
+    height: 96vh;
+    border: 1px solid black;
+    padding: 1rem;
+    padding-top: 0;
+    background-color: #F7F8F9;
+} 
+
+.landing h1{
+    width: 100%;
+}
+
+.landing-in{
+    position: absolute;
+    bottom: 2rem;
+}
+
+.landing-in p{
+    color: grey;
+    width: 70%;
+    margin-bottom: 2rem;
+    margin-top: -0.5rem;
+}
+
+.landing .create-acc{
+    height: 40px;
+    width: 94%;
+    background-color: #6C25FF;
+    color: white;
+    border-radius: 5px;
+    bottom: 1rem;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.landing .al-reg{
+    height: 40px;
+    width: 94%;
+    background-color: #CEBAFB;
+    color: black;
+    border-radius: 5px;
+    bottom: 1rem;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.landing .al-reg:active, .create-acc:active{
+   transform: scale(0.95);
+}
+
+
+
+
+/* sing-up */
+
+.sign-up{
+    position: relative;
+    margin:0 auto;
+    width: 320px;
+    height: 96vh;
+    border: 1px solid black;
+    padding: 1rem;
+    padding-top: 0;
+    background-color: #F7F8F9;
+}
+
+.field{
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color:#6C25FF;
+    border: 1px solid lightgrey;
+}
+
+.field input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #F7F8F9
+}
+
+.sign-up .create-acc{
+    position: absolute;
+    height: 40px;
+    width: 90%;
+    background-color: #6C25FF;
+    color: white;
+    border-radius: 5px;
+    bottom: 1rem;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sign-up .create-acc:active{
+    transform: scale(0.95);
+}
+
+input[type=radio]#blue {
+    accent-color: #6C25FF;
+}
+
+
+/* login */
+
+.login{
+    position: relative;
+    margin:0 auto;
+    width: 320px;
+    height: 96vh;
+    border: 1px solid black;
+    padding: 1rem;
+    padding-top: 0;
+    background-color: #F7F8F9;
+}
+
+.login p{
+    width: 70%;
+    color: gray;
+}
+
+.login .login-btn{
+    height: 40px;
+    width: 100%;
+    background-color: #6C25FF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -15px;
+
+}
+
+.login .login-btn:active{
+    transform: scale(0.95);
+}
+
+.login .disabled{
+    height: 40px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -15px;
+    background-color: #CBCBCB;
+}
+
+
+/* profile */
+.main-profile{
+    width: 320px;
+    height: 99vh;
+    border: 1px solid black;
+    background-color: white;
+    padding-top: 0;
+}
+
+.profile{
+    position: relative;
+    width: 90%;
+    height: 86vh;
+    padding: 1rem;
+    padding-top: 1rem;
+    background-color: #F7F8F9;
+}
+
+.main-profile .setting{
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    margin-left: 1rem;
+}
+
+.profile .info{
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.profile .info img{
+    width: 100%;
+}
+.profile .info .right-info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.profile .info .right-info p{
+   margin-top: -10px;
+}
+
+.profile .img{
+    position: relative;
+    display: flex;
+    width: 30%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.profile .info .img .add-logo{
+    position: absolute;
+    border-radius: 50%;
+    width: 25px;
+    bottom: 5px;
+    right: 0px;
+    border: 1px solid blue;
+}
+
+
+
+
