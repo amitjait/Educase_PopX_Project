@@ -6,13 +6,17 @@ export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const btnRef = useRef(null);
-    // const [ready, setReady] = useState(false);
+    const [ready, setReady] = useState(false);
 
     const navigate = useNavigate();
 
 
 
     const login = () =>{
+
+        if(!ready){
+            return;
+        }
         // Check if LocalStorage has an existing users array
         if (localStorage.getItem("users")) {
           // Retrieve the existing users array from LocalStorage and parse it from JSON
@@ -53,11 +57,11 @@ export default function Login() {
             if(checkEmail() && email.length > 7 && password.length >= 6){
                 btnRef.current.classList.remove("disabled");
                 btnRef.current.classList.add("login-btn");
-                // setReady(true);
+                setReady(true);
             }else{
                 btnRef.current.classList.remove("login-btn");
                 btnRef.current.classList.add("disabled");
-                // setReady(false);
+                setReady(false);
             }
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
